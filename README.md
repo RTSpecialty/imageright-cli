@@ -11,8 +11,51 @@ npm install -g @rtspecialty/imageright-cli
 ## Usage
 
 ```
-$ imageright-api help
+imageright-cli$ help
 
+  Commands:
+
+    help [command...]                 Provides help for a given command.
+    exit                              Exits application.
+    authenticate [options]            Authenticates with the ImageRight API and generates a AccessToken
+    create page [options] <filePath>  creates a new page using a file
+
+imageright-cli$
+
+```
+
+```
+imageright-cli$ authenticate --help
+
+  Usage: authenticate [options]
+
+  Authenticates with the ImageRight API and generates a AccessToken
+
+  Options:
+
+    --help                     output usage information
+    -B, --baseURL <baseURL>    ImageRight API Base URL location
+    -U, --username <username>  ImageRight User Account Name
+    -P, --password <password>  ImageRight Password
+
+imageright-cli$
+
+```
+
+```
+imageright-cli$ create page --help
+
+  Usage: create page [options] <filePath>
+
+  creates a new page using a file
+
+  Options:
+
+    --help                    output usage information
+    -D, --docId <docId>       ImageRight Document Object ID
+    -n, --desc <description>  Page Description
+
+imageright-cli$
 
 ```
 
