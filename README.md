@@ -5,12 +5,12 @@
 ## Installation
 
 ```bash
-npm install -g @rtspecialty/imageright-cli
+npm install -g imageright-cli
 ```
 
 ## Usage
 
-```
+```bash
 imageright-cli$ help
 
   Commands:
@@ -24,7 +24,7 @@ imageright-cli$
 
 ```
 
-```
+```bash
 imageright-cli$ authenticate --help
 
   Usage: authenticate [options]
@@ -42,7 +42,7 @@ imageright-cli$
 
 ```
 
-```
+```bash
 imageright-cli$ create page --help
 
   Usage: create page [options] <filePath>
@@ -61,7 +61,7 @@ imageright-cli$
 
 ## About
 
-Written as a demo application for NetVU Accelerate 2018
+Written as a demo application for [NetVU Accelerate 2018](https://www.netvu.org/web/Accelerate18)
 
 [ImageRight](https://www.vertafore.com/products/imageright) is a product of Vertafore, Inc.
 
