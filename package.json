@@ -1,0 +1,60 @@
+{
+  "name": "@rtspecialty/imageright-cli",
+  "version": "0.0.1",
+  "description": "A command line interface for the ImageRight API (Beta)",
+  "main": "lib/",
+  "bin": {
+    "imageright-cli": "./bin/imageright-cli.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "bin": "bin"
+  },
+  "scripts": {
+    "eslint": "eslint lib bin --config .eslintrc.json",
+    "mocha": "mocha --opts mocha.opts",
+    "release:pre": "npm version prerelease && npm publish --tag pre --access public",
+    "release:patch": "npm version patch && npm publish --access public",
+    "release:minor": "npm version minor && npm publish --access public",
+    "release:major": "npm version major && npm publish --access public",
+    "start": "node lib/",
+    "test": "npm run eslint && npm run mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RTSpecialty/imageright-cli.git"
+  },
+  "keywords": [
+    "ImageRight",
+    "CLI",
+    "imageright-cli"
+  ],
+  "author": {
+    "name": "Jeremy Fowler",
+    "email": "jeremy.f76@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RTSpecialty/imageright-cli/issues"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "homepage": "https://github.com/RTSpecialty/imageright-cli#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "concat-stream": "^1.6.2",
+    "dotenv": "^5.0.1",
+    "form-data": "^2.3.2",
+    "nock": "^9.2.6",
+    "node-fetch": "^2.1.2",
+    "vorpal": "^1.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-watch": "^3.1.4",
+    "mocha": "^5.1.1"
+  }
+}
