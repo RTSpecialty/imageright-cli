@@ -1,5 +1,5 @@
 {
-  "name": "@rtspecialty/imageright-cli",
+  "name": "imageright-cli",
   "version": "0.0.1",
   "description": "A command line interface for the ImageRight API (Beta)",
   "main": "lib/",
